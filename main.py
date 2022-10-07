@@ -26,16 +26,15 @@ if _ENABLE_PROFILING:
 
 today = date.today()
 
-response =
 
 ##URL for webscraping National U.S COVID Data
 html_text = requests.get('https://www.worldometers.info/coronavirus/country/us/')
-webpage = urlopen(response).read()
-html = soup(webpage, "html.parser")
+#webpage = urlopen(response).read()
+#html = soup(webpage, "html.parser")
 webscrapenum = soup.findall('li', class_='#maincounter-number')
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'}
-response = Request(url, headers=headers)
+#response = Request(url, headers=headers)
 
 print('COVID-19 Utility Web Application')
 print("""
@@ -130,8 +129,8 @@ if _ENABLE_PROFILING:
     sortby = SortKey.CUMULATIVE
     ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
     ps.print_stats()
-    ts = int(time.time())
-    with open(f"perf_{ts}.txt", "w") as f:
-        f.write(s.getvalue())
+    #ts = int(time.time())
+    #with open(f"perf_{ts}.txt", "w") as f:
+        #f.write(s.getvalue())
 
 # end
