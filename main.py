@@ -11,9 +11,11 @@ import altair as alt
 from pandas.io.json import json_normalize
 from datetime import date
 import json
+import tkinter as tk
 
-from county import us_state_county
-from state import us_state_to_abbrev
+
+from countydata import us_state_county
+from statedata import us_state_to_abbrev
 
 _ENABLE_PROFILING = False
 
@@ -59,15 +61,17 @@ response = requests.get(county_url)
 data = response.json()
 states = [x["state"] for x in data]
 cases = [x["actuals"]["cases"] for x in data]
-##deaths = [x["actuals"]["deaths"] for x in data]
+deaths = [x["actuals"]["deaths"] for x in data]
 
 counties = [x["county"] for x in data]
 cases = [x["actuals"]["cases"] for x in data]
+deaths = [x["actuals"]["deaths"] for x in data]
 print(cases)
 
 dictionary_1 = dict(zip(states, cases))
 dictionary_2 = dict(zip(counties, cases))
-##dictionary = dict(zip(states, deaths))
+dictionary_1 = dict(zip(states, deaths))
+dictionary_2 = dict(zip(counties, deaths))
 
 
 ## U.S State Input
