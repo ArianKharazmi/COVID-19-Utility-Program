@@ -1,4 +1,4 @@
-import main
+
 
 ## US State County Data
 us_state_county = {
@@ -307,7 +307,6 @@ us_state_county = {
         "name": "Macon County",
         "state": "Alabama",
         "fips": "01087",
-        "population": 18895,
         "area": 608,
         "density": 31
     },
@@ -315,7 +314,6 @@ us_state_county = {
         "name": "Madison County",
         "state": "Alabama",
         "fips": "01089",
-        "population": 395211,
         "area": 801,
         "density": 493
     },
@@ -323,7 +321,6 @@ us_state_county = {
         "name": "Marengo County",
         "state": "Alabama",
         "fips": "01091",
-        "population": 18996,
         "area": 976,
         "density": 19
     },
@@ -331,7 +328,6 @@ us_state_county = {
         "name": "Marion County",
         "state": "Alabama",
         "fips": "01093",
-        "population": 29246,
         "area": 742,
         "density": 39
     },
@@ -339,7 +335,6 @@ us_state_county = {
         "name": "Marshall County",
         "state": "Alabama",
         "fips": "01095",
-        "population": 98228,
         "area": 565,
         "density": 174
     },
@@ -347,7 +342,6 @@ us_state_county = {
         "name": "Mobile County",
         "state": "Alabama",
         "fips": "01097",
-        "population": 413073,
         "area": 1229,
         "density": 336
     },
@@ -355,7 +349,6 @@ us_state_county = {
         "name": "Monroe County",
         "state": "Alabama",
         "fips": "01099",
-        "population": 19648,
         "area": 1025,
         "density": 19
     },
@@ -363,7 +356,6 @@ us_state_county = {
         "name": "Montgomery County",
         "state": "Alabama",
         "fips": "01101",
-        "population": 227434,
         "area": 784,
         "density": 290
     },
@@ -371,7 +363,6 @@ us_state_county = {
         "name": "Morgan County",
         "state": "Alabama",
         "fips": "01103",
-        "population": 123668,
         "area": 579,
         "density": 214
     },
@@ -7675,7 +7666,6 @@ us_state_county = {
         "name": "Sedgwick County",
         "state": "Kansas",
         "fips": "20173",
-        "population": 523828,
         "area": 1000,
         "density": 524
     },
@@ -7683,7 +7673,6 @@ us_state_county = {
         "name": "Seward County",
         "state": "Kansas",
         "fips": "20175",
-        "population": 21747,
         "area": 640,
         "density": 34
     },
@@ -7691,7 +7680,6 @@ us_state_county = {
         "name": "Shawnee County",
         "state": "Kansas",
         "fips": "20177",
-        "population": 178264,
         "area": 550,
         "density": 324
     },
@@ -7699,7 +7687,6 @@ us_state_county = {
         "name": "Sheridan County",
         "state": "Kansas",
         "fips": "20179",
-        "population": 2478,
         "area": 896,
         "density": 3
     },
@@ -7707,7 +7694,6 @@ us_state_county = {
         "name": "Sherman County",
         "state": "Kansas",
         "fips": "20181",
-        "population": 5895,
         "area": 1056,
         "density": 6
     },
@@ -7715,7 +7701,6 @@ us_state_county = {
         "name": "Smith County",
         "state": "Kansas",
         "fips": "20183",
-        "population": 3576,
         "area": 896,
         "density": 4
     },
@@ -7723,7 +7708,6 @@ us_state_county = {
         "name": "Stafford County",
         "state": "Kansas",
         "fips": "20185",
-        "population": 4034,
         "area": 792,
         "density": 5
     },
@@ -7731,7 +7715,6 @@ us_state_county = {
         "name": "Stanton County",
         "state": "Kansas",
         "fips": "20187",
-        "population": 2044,
         "area": 680,
         "density": 3
     },
@@ -7851,7 +7834,6 @@ us_state_county = {
         "name": "Ballard County",
         "state": "Kentucky",
         "fips": "21007",
-        "population": 7695,
         "area": 251,
         "density": 31
     },
@@ -7859,7 +7841,6 @@ us_state_county = {
         "name": "Barren County",
         "state": "Kentucky",
         "fips": "21009",
-        "population": 44544,
         "area": 491,
         "density": 91
     },
@@ -7867,7 +7848,6 @@ us_state_county = {
         "name": "Bath County",
         "state": "Kentucky",
         "fips": "21011",
-        "population": 12778,
         "area": 279,
         "density": 46
     },
@@ -7875,7 +7855,6 @@ us_state_county = {
         "name": "Bell County",
         "state": "Kentucky",
         "fips": "21013",
-        "population": 23858,
         "area": 361,
         "density": 66
     },
@@ -7883,7 +7862,6 @@ us_state_county = {
         "name": "Boone County",
         "state": "Kentucky",
         "fips": "21015",
-        "population": 137412,
         "area": 246,
         "density": 559
     },
@@ -7891,7 +7869,6 @@ us_state_county = {
         "name": "Bourbon County",
         "state": "Kentucky",
         "fips": "21017",
-        "population": 20229,
         "area": 291,
         "density": 70
     },
@@ -7899,7 +7876,6 @@ us_state_county = {
         "name": "Boyd County",
         "state": "Kentucky",
         "fips": "21019",
-        "population": 47899,
         "area": 160,
         "density": 299
     },
@@ -7907,7 +7883,6 @@ us_state_county = {
         "name": "Boyle County",
         "state": "Kentucky",
         "fips": "21021",
-        "population": 30747,
         "area": 182,
         "density": 169
     },
@@ -7915,7 +7890,6 @@ us_state_county = {
         "name": "Bracken County",
         "state": "Kentucky",
         "fips": "21023",
-        "population": 8439,
         "area": 203,
         "density": 42
     },
@@ -7923,7 +7897,6 @@ us_state_county = {
         "name": "Breathitt County",
         "state": "Kentucky",
         "fips": "21025",
-        "population": 13553,
         "area": 495,
         "density": 27
     },
@@ -16467,7 +16440,6 @@ us_state_county = {
         "name": "Hamilton County",
         "state": "Ohio",
         "fips": "39061",
-        "population": 826139,
         "area": 407,
         "density": 2030
     },
@@ -16475,7 +16447,6 @@ us_state_county = {
         "name": "Hancock County",
         "state": "Ohio",
         "fips": "39063",
-        "population": 74656,
         "area": 531,
         "density": 141
     },
