@@ -13,9 +13,10 @@ from datetime import date
 import json
 import tkinter as tk
 
+from urllib3.util import url
 
-from countydata import us_state_county
 from statedata import us_state_to_abbrev
+from countydata import us_state_county
 
 _ENABLE_PROFILING = False
 
@@ -29,14 +30,16 @@ if _ENABLE_PROFILING:
 today = date.today()
 
 
+
 ##URL for webscraping National U.S COVID Data
-html_text = requests.get('https://www.worldometers.info/coronavirus/country/us/')
+#response = Request(url)
+#response = requests.get('https://www.nytimes.com/interactive/2021/us/covid-cases.html')
 #webpage = urlopen(response).read()
 #html = soup(webpage, "html.parser")
-webscrapenum = soup.findall('li', class_='#maincounter-number')
+#webscrapenum = soup.findall('li', class_='#maincounter-number')
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'}
-#response = Request(url, headers=headers)
+
 
 print('COVID-19 Utility Web Application')
 print("""
@@ -63,15 +66,18 @@ states = [x["state"] for x in data]
 cases = [x["actuals"]["cases"] for x in data]
 deaths = [x["actuals"]["deaths"] for x in data]
 
+
 counties = [x["county"] for x in data]
 cases = [x["actuals"]["cases"] for x in data]
 deaths = [x["actuals"]["deaths"] for x in data]
 print(cases)
+print(deaths)
+
 
 dictionary_1 = dict(zip(states, cases))
 dictionary_2 = dict(zip(counties, cases))
-dictionary_1 = dict(zip(states, deaths))
-dictionary_2 = dict(zip(counties, deaths))
+dictionary_3 = dict(zip(states, deaths))
+dictionary_4 = dict(zip(counties, deaths))
 
 
 ## U.S State Input
@@ -105,9 +111,12 @@ while (inp == False):
         print("Try again")
 
 # mainline console print
+print
 print("There are " + str(dictionary_1[state_key]) + " total confirmed COVID-19 cases in " + state)
 print("There are " + str(dictionary_2[county_key]) + " total confirmed COVID-19 cases in " + county)
-##print("There are " + str(dictionary[state_key]) + " total deaths in " + state)
+print("There are " + str(dictionary_3[state_key]) + " total deaths in " + state)
+print("There are " + str(dictionary_4[county_key]) + " total deaths in " + county)
+
 
 print('# COVID-19 Utility Data Dashboard')
 
