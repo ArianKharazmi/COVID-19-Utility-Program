@@ -1,4 +1,9 @@
 
+## Removing population...
+
+# Removing state name next to the county on the first line of each works
+
+
 
 ## US State County Data
 us_state_county = {
@@ -16454,7 +16459,6 @@ us_state_county = {
         "name": "Hardin County",
         "state": "Ohio",
         "fips": "39065",
-        "population": 30621,
         "area": 470,
         "density": 65
     },
