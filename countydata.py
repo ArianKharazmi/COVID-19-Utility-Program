@@ -2,7 +2,7 @@
 ## Removing population...
 
 # Removing state name next to the county on the first line of each works
-
+# v1.4 # needs patching for NYT API
 
 
 ## US State County Data

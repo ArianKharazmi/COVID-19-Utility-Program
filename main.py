@@ -43,21 +43,48 @@ today = date.today()
 
 print('COVID-19 Utility Application')
 print("""
-* **Data source (COVID Data API):** [COVID-Act-Now.com](https://apidocs.covidactnow.org/), [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)""")
+* **Data source (COVID Data API):** [COVID-Act-Now.com](https://apidocs.covidactnow.org/), [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19), [New York Times](https://github.com/nytimes/covid-19-data)""")
 print("""
 This application uses COVID Data API to gather accurate data and present it in one place.
 
 **This is an early version of the program, please do not take COVID data presented here as an accurate reflection.**
 ***
 """)
+
+# Johns Hopkins University COVID Data
 def get_data():
     US_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv'
     US_deaths = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv'
     confirmed = pd.read_csv(US_confirmed)
     usdeaths = pd.read_csv(US_deaths)
     return confirmed, usdeaths
-
 confirmed, usdeaths = get_data()
+
+# New York Times COVID Data API
+def get_data():
+    # U.S Death Data
+    USA_deaths = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us.csv'
+    usadeaths = pd.read_csv(USA_deaths)
+    # U.S COVID Case Data
+    USA_cases = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us.csv'
+    usacases = pd.read_csv(USA_cases)
+    # U.S State COVID Death Data
+    State_deaths = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv'
+    statedeaths = pd.read_csv(State_deaths)
+    # U.S State COVID Case Data
+    State_cases = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv'
+    statecases = pd.read_csv(State_cases)
+    # U.S County COVID Death Data
+    County_deaths = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv'
+    countydeaths = pd.read_csv(County_deaths)
+    # U.S County COVID Case Data
+    County_cases = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv'
+    countycases = pd.read_csv(County_cases)
+
+    return usadeaths, usacases, statedeaths, statecases, countydeaths, countycases
+usadeaths, usacases, statedeaths, statecases, countydeaths, countycases = get_data()
+
+
 FIPSs = confirmed.groupby(['Province_State', 'Admin2']).FIPS.unique().apply(pd.Series).reset_index()
 FIPSs.columns = ['State', 'County', 'FIPS']
 FIPSs['FIPS'].fillna(0, inplace = True)
@@ -96,6 +123,16 @@ dictionary_5 = dict(zip(states, confirmed))
 dictionary_6 = dict(zip(counties, confirmed))
 dictionary_7 = dict(zip(states, usdeaths))
 dictionary_8 = dict(zip(counties, usdeaths))
+
+# New York Times COVID Data API Dict 9 - 13
+#dictionary_9 = dict(zip(countries, usadeaths))
+dictionary_10 = dict(zip(states, statedeaths))
+dictionary_11 = dict(zip(counties, countydeaths))
+dictionary_12 = dict(zip(states, statecases))
+dictionary_13 = dict(zip(counties, countycases))
+
+
+
 
 ## U.S State Input
 inp = False
@@ -138,6 +175,14 @@ print("There are " + str(dictionary_6[county_key]) + " total confirmed COVID-19 
 print("There are " + str(dictionary_7[state_key]) + " total confirmed COVID-19 deaths in " + state + " according to [Johns Hopkins University]")
 print("There are " + str(dictionary_8[county_key]) + " total confirmed COVID-19 deaths in " + county + " according to [Johns Hopkins University]")
 
+print("There are " + str(dictionary_10[state_key]) + " total confirmed COVID-19 deaths in " + state + " according to [New York Times]")
+print("There are " + str(dictionary_11[county_key]) + " total confirmed COVID-19 deaths in " + county + " according to [New York Times]")
+print("There are " + str(dictionary_12[state_key]) + " total confirmed COVID-19 cases in " + state + " according to [New York Times]")
+print("There are " + str(dictionary_13[county_key]) + " total confirmed COVID-19 cases in " + county + " according to [New York Times]")
+
+
+
+
 
 print('# COVID-19 Utility Data Dashboard')
 
@@ -152,7 +197,7 @@ print(f"""
     [COVID-19 Data Repository](https://github.com/CSSEGISandData/COVID-19)[*Johns Hopkins University*]
     https://covidactnow.org/[*COVIDActNow Org*]  
 
-    Utility last updated on {str(today)}. 
+    Utility data last updated on {str(today)}. 
     """)
 
 # Stat Sorter
