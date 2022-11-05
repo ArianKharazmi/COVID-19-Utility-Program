@@ -1,6 +1,6 @@
 
 # defined by dict()
-
+# v1.4 # needs patching for NYT API
 #US State Data and Abbreviations
 us_state_to_abbrev = {
     "Alabama": "AL",
