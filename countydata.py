@@ -1,9 +1,13 @@
 
-## Removing population...
+## Identify with dict(), matched with input to fetch data
 
-# Removing state name next to the county on the first line of each works
-# v1.4 # needs patching for NYT API
+## Removing the state after the initial county name allows for the county input to be accessed without
+## typing in the county name and the state name into the same second input.
 
+## Considering removing states from the county name line in the countydata.py file.
+
+
+# v1.4.2
 
 ## US State County Data
 us_state_county = {
@@ -375,7 +379,6 @@ us_state_county = {
         "name": "Perry County",
         "state": "Alabama",
         "fips": "01105",
-        "population": 8355,
         "area": 719,
         "density": 12
     },
@@ -383,7 +386,6 @@ us_state_county = {
         "name": "Pickens County",
         "state": "Alabama",
         "fips": "01107",
-        "population": 18801,
         "area": 881,
         "density": 21
     },
@@ -391,7 +393,6 @@ us_state_county = {
         "name": "Pike County",
         "state": "Alabama",
         "fips": "01109",
-        "population": 32991,
         "area": 672,
         "density": 49
     },
@@ -399,7 +400,6 @@ us_state_county = {
         "name": "Randolph County",
         "state": "Alabama",
         "fips": "01111",
-        "population": 21989,
         "area": 580,
         "density": 38
     },
@@ -407,7 +407,6 @@ us_state_county = {
         "name": "Russell County",
         "state": "Alabama",
         "fips": "01113",
-        "population": 58722,
         "area": 641,
         "density": 92
     },
@@ -415,7 +414,6 @@ us_state_county = {
         "name": "St. Clair County",
         "state": "Alabama",
         "fips": "01115",
-        "population": 92748,
         "area": 631,
         "density": 147
     },
@@ -423,7 +421,6 @@ us_state_county = {
         "name": "Shelby County",
         "state": "Alabama",
         "fips": "01117",
-        "population": 226902,
         "area": 784,
         "density": 289
     },
@@ -431,7 +428,6 @@ us_state_county = {
         "name": "Sumter County",
         "state": "Alabama",
         "fips": "01119",
-        "population": 12164,
         "area": 903,
         "density": 13
     },
@@ -439,7 +435,6 @@ us_state_county = {
         "name": "Talladega County",
         "state": "Alabama",
         "fips": "01121",
-        "population": 81524,
         "area": 736,
         "density": 111
     },
@@ -447,7 +442,6 @@ us_state_county = {
         "name": "Tallapoosa County",
         "state": "Alabama",
         "fips": "01123",
-        "population": 41023,
         "area": 716,
         "density": 57
     },
@@ -455,7 +449,6 @@ us_state_county = {
         "name": "Tuscaloosa County",
         "state": "Alabama",
         "fips": "01125",
-        "population": 227007,
         "area": 1321,
         "density": 172
     },
@@ -463,7 +456,6 @@ us_state_county = {
         "name": "Walker County",
         "state": "Alabama",
         "fips": "01127",
-        "population": 64818,
         "area": 791,
         "density": 82
     },
@@ -471,7 +463,6 @@ us_state_county = {
         "name": "Washington County",
         "state": "Alabama",
         "fips": "01129",
-        "population": 15147,
         "area": 1080,
         "density": 14
     },
@@ -479,7 +470,6 @@ us_state_county = {
         "name": "Wilcox County",
         "state": "Alabama",
         "fips": "01131",
-        "population": 10446,
         "area": 888,
         "density": 12
     },
@@ -487,7 +477,6 @@ us_state_county = {
         "name": "Winston County",
         "state": "Alabama",
         "fips": "01133",
-        "population": 23652,
         "area": 612,
         "density": 39
     },
@@ -495,7 +484,6 @@ us_state_county = {
         "name": "Aleutians East Borough",
         "state": "Alaska",
         "fips": "02013",
-        "population": 3398,
         "area": 6985,
         "density": 0
     },
@@ -503,7 +491,6 @@ us_state_county = {
         "name": "Anchorage",
         "state": "Alaska",
         "fips": "02020",
-        "population": 288121,
         "area": 1707,
         "density": 169
     },
@@ -511,7 +498,6 @@ us_state_county = {
         "name": "Bristol Bay Borough",
         "state": "Alaska",
         "fips": "02060",
-        "population": 838,
         "area": 482,
         "density": 2
     },
@@ -519,7 +505,6 @@ us_state_county = {
         "name": "Denali Borough",
         "state": "Alaska",
         "fips": "02068",
-        "population": 1593,
         "area": 12641,
         "density": 0
     },
@@ -527,7 +512,6 @@ us_state_county = {
         "name": "Fairbanks North Star Borough",
         "state": "Alaska",
         "fips": "02090",
-        "population": 95593,
         "area": 7335,
         "density": 13
     },
@@ -535,7 +519,6 @@ us_state_county = {
         "name": "Haines Borough",
         "state": "Alaska",
         "fips": "02100",
-        "population": 2071,
         "area": 2343,
         "density": 1
     },
@@ -543,7 +526,6 @@ us_state_county = {
         "name": "Juneau",
         "state": "Alaska",
         "fips": "02110",
-        "population": 31973,
         "area": 2704,
         "density": 12
     },
@@ -551,7 +533,6 @@ us_state_county = {
         "name": "Kenai Peninsula Borough",
         "state": "Alaska",
         "fips": "02122",
-        "population": 59767,
         "area": 16017,
         "density": 4
     },
@@ -559,7 +540,6 @@ us_state_county = {
         "name": "Ketchikan Gateway Borough",
         "state": "Alaska",
         "fips": "02130",
-        "population": 13754,
         "area": 4857,
         "density": 3
     },
@@ -567,7 +547,6 @@ us_state_county = {
         "name": "Kodiak Island Borough",
         "state": "Alaska",
         "fips": "02150",
-        "population": 12787,
         "area": 6689,
         "density": 2
     },
@@ -575,7 +554,6 @@ us_state_county = {
         "name": "Lake and Peninsula Borough",
         "state": "Alaska",
         "fips": "02164",
-        "population": 1416,
         "area": 23832,
         "density": 0
     },
@@ -583,7 +561,6 @@ us_state_county = {
         "name": "Matanuska-Susitna Borough",
         "state": "Alaska",
         "fips": "02170",
-        "population": 110686,
         "area": 24707,
         "density": 4
     },
@@ -591,7 +568,6 @@ us_state_county = {
         "name": "North Slope Borough",
         "state": "Alaska",
         "fips": "02185",
-        "population": 10972,
         "area": 88824,
         "density": 0
     },
@@ -599,7 +575,6 @@ us_state_county = {
         "name": "Northwest Arctic Borough",
         "state": "Alaska",
         "fips": "02188",
-        "population": 7560,
         "area": 35663,
         "density": 0
     },
@@ -607,7 +582,6 @@ us_state_county = {
         "name": "Petersburg Borough",
         "state": "Alaska",
         "fips": "02195",
-        "population": 3356,
         "area": 2901,
         "density": 1
     },
@@ -615,7 +589,6 @@ us_state_county = {
         "name": "Sitka",
         "state": "Alaska",
         "fips": "02220",
-        "population": 8407,
         "area": 2870,
         "density": 3
     },
@@ -623,7 +596,6 @@ us_state_county = {
         "name": "Skagway",
         "state": "Alaska",
         "fips": "02230",
-        "population": 1132,
         "area": 434,
         "density": 3
     },
@@ -631,7 +603,6 @@ us_state_county = {
         "name": "Unorganized Borough",
         "state": "Alaska",
         "fips": "02-",
-        "population": 76490,
         "area": 319852,
         "density": 0
     },
@@ -639,7 +610,6 @@ us_state_county = {
         "name": "Wrangell",
         "state": "Alaska",
         "fips": "02275",
-        "population": 2055,
         "area": 2556,
         "density": 1
     },
@@ -647,7 +617,6 @@ us_state_county = {
         "name": "Yakutat",
         "state": "Alaska",
         "fips": "02282",
-        "population": 704,
         "area": 7623,
         "density": 0
     },
@@ -655,7 +624,6 @@ us_state_county = {
         "name": "Apache County",
         "state": "Arizona",
         "fips": "04001",
-        "population": 65623,
         "area": 11218,
         "density": 6
     },
@@ -663,7 +631,6 @@ us_state_county = {
         "name": "Cochise County",
         "state": "Arizona",
         "fips": "04003",
-        "population": 126050,
         "area": 6219,
         "density": 20
     },
@@ -671,7 +638,6 @@ us_state_county = {
         "name": "Coconino County",
         "state": "Arizona",
         "fips": "04005",
-        "population": 145052,
         "area": 18661,
         "density": 8
     },
@@ -679,7 +645,6 @@ us_state_county = {
         "name": "Gila County",
         "state": "Arizona",
         "fips": "04007",
-        "population": 53589,
         "area": 4796,
         "density": 11
     },
@@ -687,7 +652,6 @@ us_state_county = {
         "name": "Graham County",
         "state": "Arizona",
         "fips": "04009",
-        "population": 39050,
         "area": 4641,
         "density": 8
     },
@@ -695,7 +659,6 @@ us_state_county = {
         "name": "Greenlee County",
         "state": "Arizona",
         "fips": "04011",
-        "population": 9404,
         "area": 1848,
         "density": 5
     },
@@ -703,7 +666,6 @@ us_state_county = {
         "name": "La Paz County",
         "state": "Arizona",
         "fips": "04012",
-        "population": 16408,
         "area": 4513,
         "density": 4
     },
@@ -711,7 +673,6 @@ us_state_county = {
         "name": "Maricopa County",
         "state": "Arizona",
         "fips": "04013",
-        "population": 4496588,
         "area": 9224,
         "density": 487
     },
@@ -719,7 +680,6 @@ us_state_county = {
         "name": "Mohave County",
         "state": "Arizona",
         "fips": "04015",
-        "population": 217692,
         "area": 13470,
         "density": 16
     },
@@ -727,7 +687,6 @@ us_state_county = {
         "name": "Navajo County",
         "state": "Arizona",
         "fips": "04017",
-        "population": 108147,
         "area": 9959,
         "density": 11
     },
@@ -735,7 +694,6 @@ us_state_county = {
         "name": "Pima County",
         "state": "Arizona",
         "fips": "04019",
-        "population": 1052030,
         "area": 9189,
         "density": 114
     },
@@ -743,7 +701,6 @@ us_state_county = {
         "name": "Pinal County",
         "state": "Arizona",
         "fips": "04021",
-        "population": 449557,
         "area": 5374,
         "density": 84
     },
@@ -751,7 +708,6 @@ us_state_county = {
         "name": "Santa Cruz County",
         "state": "Arizona",
         "fips": "04023",
-        "population": 47883,
         "area": 1238,
         "density": 39
     },
@@ -759,7 +715,6 @@ us_state_county = {
         "name": "Yavapai County",
         "state": "Arizona",
         "fips": "04025",
-        "population": 242253,
         "area": 8128,
         "density": 30
     },
@@ -767,7 +722,6 @@ us_state_county = {
         "name": "Yuma County",
         "state": "Arizona",
         "fips": "04027",
-        "population": 206990,
         "area": 5519,
         "density": 38
     },
@@ -775,7 +729,6 @@ us_state_county = {
         "name": "Arkansas County",
         "state": "Arkansas",
         "fips": "05001",
-        "population": 16722,
         "area": 1033,
         "density": 16
     },
@@ -783,7 +736,6 @@ us_state_county = {
         "name": "Ashley County",
         "state": "Arkansas",
         "fips": "05003",
-        "population": 18674,
         "area": 939,
         "density": 20
     },
@@ -791,7 +743,6 @@ us_state_county = {
         "name": "Baxter County",
         "state": "Arkansas",
         "fips": "05005",
-        "population": 42144,
         "area": 586,
         "density": 72
     },
@@ -799,7 +750,6 @@ us_state_county = {
         "name": "Benton County",
         "state": "Arkansas",
         "fips": "05007",
-        "population": 293692,
         "area": 884,
         "density": 332
     },
@@ -807,7 +757,6 @@ us_state_county = {
         "name": "Boone County",
         "state": "Arkansas",
         "fips": "05009",
-        "population": 37830,
         "area": 601,
         "density": 63
     },
@@ -815,7 +764,6 @@ us_state_county = {
         "name": "Bradley County",
         "state": "Arkansas",
         "fips": "05011",
-        "population": 10408,
         "area": 654,
         "density": 16
     },
@@ -823,7 +771,6 @@ us_state_county = {
         "name": "Calhoun County",
         "state": "Arkansas",
         "fips": "05013",
-        "population": 4741,
         "area": 632,
         "density": 8
     },
@@ -831,7 +778,6 @@ us_state_county = {
         "name": "Carroll County",
         "state": "Arkansas",
         "fips": "05015",
-        "population": 28435,
         "area": 638,
         "density": 45
     },
@@ -839,7 +785,6 @@ us_state_county = {
         "name": "Chicot County",
         "state": "Arkansas",
         "fips": "05017",
-        "population": 10019,
         "area": 690,
         "density": 15
     },
@@ -847,7 +792,6 @@ us_state_county = {
         "name": "Clark County",
         "state": "Arkansas",
         "fips": "05019",
-        "population": 21321,
         "area": 882,
         "density": 24
     },
@@ -855,7 +799,6 @@ us_state_county = {
         "name": "Clay County",
         "state": "Arkansas",
         "fips": "05021",
-        "population": 14350,
         "area": 641,
         "density": 22
     },
@@ -863,7 +806,6 @@ us_state_county = {
         "name": "Cleburne County",
         "state": "Arkansas",
         "fips": "05023",
-        "population": 25015,
         "area": 591,
         "density": 42
     },
@@ -7671,6 +7613,7 @@ us_state_county = {
         "name": "Sedgwick County",
         "state": "Kansas",
         "fips": "20173",
+        "population": 523828,
         "area": 1000,
         "density": 524
     },
@@ -7678,6 +7621,7 @@ us_state_county = {
         "name": "Seward County",
         "state": "Kansas",
         "fips": "20175",
+        "population": 21747,
         "area": 640,
         "density": 34
     },
@@ -7685,6 +7629,7 @@ us_state_county = {
         "name": "Shawnee County",
         "state": "Kansas",
         "fips": "20177",
+        "population": 178264,
         "area": 550,
         "density": 324
     },
@@ -7692,6 +7637,7 @@ us_state_county = {
         "name": "Sheridan County",
         "state": "Kansas",
         "fips": "20179",
+        "population": 2478,
         "area": 896,
         "density": 3
     },
@@ -7699,6 +7645,7 @@ us_state_county = {
         "name": "Sherman County",
         "state": "Kansas",
         "fips": "20181",
+        "population": 5895,
         "area": 1056,
         "density": 6
     },
@@ -7706,6 +7653,7 @@ us_state_county = {
         "name": "Smith County",
         "state": "Kansas",
         "fips": "20183",
+        "population": 3576,
         "area": 896,
         "density": 4
     },
@@ -7713,6 +7661,7 @@ us_state_county = {
         "name": "Stafford County",
         "state": "Kansas",
         "fips": "20185",
+        "population": 4034,
         "area": 792,
         "density": 5
     },
@@ -7720,6 +7669,7 @@ us_state_county = {
         "name": "Stanton County",
         "state": "Kansas",
         "fips": "20187",
+        "population": 2044,
         "area": 680,
         "density": 3
     },
@@ -7839,6 +7789,7 @@ us_state_county = {
         "name": "Ballard County",
         "state": "Kentucky",
         "fips": "21007",
+        "population": 7695,
         "area": 251,
         "density": 31
     },
@@ -7846,6 +7797,7 @@ us_state_county = {
         "name": "Barren County",
         "state": "Kentucky",
         "fips": "21009",
+        "population": 44544,
         "area": 491,
         "density": 91
     },
@@ -7853,6 +7805,7 @@ us_state_county = {
         "name": "Bath County",
         "state": "Kentucky",
         "fips": "21011",
+        "population": 12778,
         "area": 279,
         "density": 46
     },
@@ -7860,6 +7813,7 @@ us_state_county = {
         "name": "Bell County",
         "state": "Kentucky",
         "fips": "21013",
+        "population": 23858,
         "area": 361,
         "density": 66
     },
@@ -7867,6 +7821,7 @@ us_state_county = {
         "name": "Boone County",
         "state": "Kentucky",
         "fips": "21015",
+        "population": 137412,
         "area": 246,
         "density": 559
     },
@@ -7874,6 +7829,7 @@ us_state_county = {
         "name": "Bourbon County",
         "state": "Kentucky",
         "fips": "21017",
+        "population": 20229,
         "area": 291,
         "density": 70
     },
@@ -7881,6 +7837,7 @@ us_state_county = {
         "name": "Boyd County",
         "state": "Kentucky",
         "fips": "21019",
+        "population": 47899,
         "area": 160,
         "density": 299
     },
@@ -7888,6 +7845,7 @@ us_state_county = {
         "name": "Boyle County",
         "state": "Kentucky",
         "fips": "21021",
+        "population": 30747,
         "area": 182,
         "density": 169
     },
@@ -7895,6 +7853,7 @@ us_state_county = {
         "name": "Bracken County",
         "state": "Kentucky",
         "fips": "21023",
+        "population": 8439,
         "area": 203,
         "density": 42
     },
@@ -7902,6 +7861,7 @@ us_state_county = {
         "name": "Breathitt County",
         "state": "Kentucky",
         "fips": "21025",
+        "population": 13553,
         "area": 495,
         "density": 27
     },
@@ -7917,7 +7877,6 @@ us_state_county = {
         "name": "Bullitt County",
         "state": "Kentucky",
         "fips": "21029",
-        "population": 82918,
         "area": 299,
         "density": 277
     },
@@ -7925,7 +7884,6 @@ us_state_county = {
         "name": "Butler County",
         "state": "Kentucky",
         "fips": "21031",
-        "population": 12294,
         "area": 428,
         "density": 29
     },
@@ -7933,7 +7891,6 @@ us_state_county = {
         "name": "Caldwell County",
         "state": "Kentucky",
         "fips": "21033",
-        "population": 12624,
         "area": 347,
         "density": 36
     },
@@ -7941,7 +7898,6 @@ us_state_county = {
         "name": "Calloway County",
         "state": "Kentucky",
         "fips": "21035",
-        "population": 37560,
         "area": 386,
         "density": 97
     },
@@ -7949,7 +7905,6 @@ us_state_county = {
         "name": "Campbell County",
         "state": "Kentucky",
         "fips": "21037",
-        "population": 93050,
         "area": 152,
         "density": 612
     },
@@ -7957,7 +7912,6 @@ us_state_county = {
         "name": "Carlisle County",
         "state": "Kentucky",
         "fips": "21039",
-        "population": 4791,
         "area": 192,
         "density": 25
     },
@@ -7965,7 +7919,6 @@ us_state_county = {
         "name": "Carroll County",
         "state": "Kentucky",
         "fips": "21041",
-        "population": 10863,
         "area": 130,
         "density": 84
     },
@@ -7973,7 +7926,6 @@ us_state_county = {
         "name": "Carter County",
         "state": "Kentucky",
         "fips": "21043",
-        "population": 26412,
         "area": 411,
         "density": 64
     },
@@ -16452,6 +16404,7 @@ us_state_county = {
         "name": "Hancock County",
         "state": "Ohio",
         "fips": "39063",
+        "population": 74656,
         "area": 531,
         "density": 141
     },
@@ -16459,6 +16412,7 @@ us_state_county = {
         "name": "Hardin County",
         "state": "Ohio",
         "fips": "39065",
+        "population": 30621,
         "area": 470,
         "density": 65
     },
@@ -24634,7 +24588,6 @@ us_state_county = {
         "name": "Sheridan County",
         "state": "Wyoming",
         "fips": "56033",
-        "population": 31646,
         "area": 2523,
         "density": 13
     },
@@ -24642,7 +24595,6 @@ us_state_county = {
         "name": "Sublette County",
         "state": "Wyoming",
         "fips": "56035",
-        "population": 8697,
         "area": 4882,
         "density": 2
     },
@@ -24650,7 +24602,6 @@ us_state_county = {
         "name": "Sweetwater County",
         "state": "Wyoming",
         "fips": "56037",
-        "population": 41614,
         "area": 10426,
         "density": 4
     },
@@ -24658,7 +24609,6 @@ us_state_county = {
         "name": "Teton County",
         "state": "Wyoming",
         "fips": "56039",
-        "population": 23575,
         "area": 4008,
         "density": 6
     },
@@ -24666,7 +24616,6 @@ us_state_county = {
         "name": "Uinta County",
         "state": "Wyoming",
         "fips": "56041",
-        "population": 20635,
         "area": 2082,
         "density": 10
     },
@@ -24674,7 +24623,6 @@ us_state_county = {
         "name": "Washakie County",
         "state": "Wyoming",
         "fips": "56043",
-        "population": 7705,
         "area": 2240,
         "density": 3
     },
@@ -24682,7 +24630,6 @@ us_state_county = {
         "name": "Weston County",
         "state": "Wyoming",
         "fips": "56045",
-        "population": 6745,
         "area": 2398,
         "density": 3,
     }

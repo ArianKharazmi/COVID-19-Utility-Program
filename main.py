@@ -16,6 +16,8 @@ import tkinter as tk
 from urllib3.util import url
 
 from statedata import us_state_to_abbrev
+from statedata import us_state_list
+from statedata import us_state_fip
 from countydata import us_state_county
 
 _ENABLE_PROFILING = False
@@ -114,6 +116,10 @@ print(cases)
 print(deaths)
 
 
+STATEfips = us_state_fip(dict("fips"))
+fips = STATEfips
+
+
 dictionary_1 = dict(zip(states, cases))
 dictionary_2 = dict(zip(counties, cases))
 dictionary_3 = dict(zip(states, deaths))
@@ -126,6 +132,7 @@ dictionary_8 = dict(zip(counties, usdeaths))
 
 # New York Times COVID Data API Dict 9 - 13
 #dictionary_9 = dict(zip(countries, usadeaths))
+dictionary_9 = dict(STATEfips(fips, statedeaths))
 dictionary_10 = dict(zip(states, statedeaths))
 dictionary_11 = dict(zip(counties, countydeaths))
 dictionary_12 = dict(zip(states, statecases))
@@ -144,6 +151,10 @@ while (inp == False):
         state = state.lower()
         state = state.title()
         state_key = us_state_to_abbrev[state]
+        state_key = us_state_list[state]
+        state_key = us_state_fip[state]
+        state_key = FIPSs
+        state_key = us_state_list
         print(state_key)
         inp = True
     except:
@@ -174,6 +185,9 @@ print("There are " + str(dictionary_5[state_key]) + " total confirmed COVID-19 c
 print("There are " + str(dictionary_6[county_key]) + " total confirmed COVID-19 deaths in " + county + " according to [Johns Hopkins University]")
 print("There are " + str(dictionary_7[state_key]) + " total confirmed COVID-19 deaths in " + state + " according to [Johns Hopkins University]")
 print("There are " + str(dictionary_8[county_key]) + " total confirmed COVID-19 deaths in " + county + " according to [Johns Hopkins University]")
+
+#temporary line
+print("There are " + str(dictionary_9[state_key]) + " total confirmed COVID-19 deaths in " + state + " according to [NYT]")
 
 print("There are " + str(dictionary_10[state_key]) + " total confirmed COVID-19 deaths in " + state + " according to [New York Times]")
 print("There are " + str(dictionary_11[county_key]) + " total confirmed COVID-19 deaths in " + county + " according to [New York Times]")
