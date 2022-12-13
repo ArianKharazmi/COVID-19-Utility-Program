@@ -5,5 +5,5 @@ A program that gathers Coronavirus (COVID-19) data and employs its statistics on
 
 
 
-**This program is in its early stages, please do not take COVID data as accurate for the time being until the program has been properly updated to display that information as accurate.**
+**This program is in its early stages, please do not take COVID-19 data as accurate for the time being until the program has been properly updated to display that information as accurate.**
 
