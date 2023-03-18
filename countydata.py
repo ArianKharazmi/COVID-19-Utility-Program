@@ -7,7 +7,7 @@
 ## Considering removing states from the county name line in the countydata.py file.
 
 
-# v1.4.3
+# v1.5.2
 
 ## US State County Data
 us_state_county = {
